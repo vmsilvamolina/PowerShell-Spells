@@ -2,4 +2,4 @@
 
 ## Change the console color
 
-$host.UI.RawUI.BackgroundColor = "Black"; Clear-Host
+`$host.UI.RawUI.BackgroundColor = "Black"; Clear-Host`
