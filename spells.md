@@ -1,4 +1,4 @@
-#Spells
+# Spells
 
 ## Change the console color
 
