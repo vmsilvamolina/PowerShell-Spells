@@ -6,8 +6,7 @@
 
 ## Replace multiple spaces with a comma
 
-`$text = 'Hello          World'` \
-`$text -replace '\s\s+', ","`
+`$text = 'Hello          World'; $text -replace '\s\s+', ","`
 
 ## Rename a folder using the Move method
 `[System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')`
