@@ -9,4 +9,9 @@
 `$text = 'Hello          World'; $text -replace '\s\s+', ","`
 
 ## Rename a folder using the Move method
+
 `[System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')`
+
+## Match with regex
+
+``"One line `nSecond line" -match '(^\s*)'``
