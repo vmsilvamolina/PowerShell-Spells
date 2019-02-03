@@ -1,12 +1,7 @@
 # PowerShell-Spells
 
-## Change the console color
+PowerShell Spells is a project that pretend collect on-liner tricks (spells) to use with PowerShell. The main reason is expand the knowledge of the language and a fun information for check.
 
-`$host.UI.RawUI.BackgroundColor = "Black"; Clear-Host`
+## Installation
 
-## Replace multiple spaces with a comma
-
-`$text = 'Hello          World'; $text -replace '\s\s+', ","`
-
-## Rename a folder using the Move method
-`[System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')`
+You can install the module...
