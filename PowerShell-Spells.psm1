@@ -6,7 +6,7 @@ function Get-AllSpells {
     
     begin {
         #$textRaw = [system.String]::Join("`n",((Get-Content "https://raw.githubusercontent.com/vmsilvamolina/PowerShell-Spells/master/spells.md") -notmatch '(^\s*$|^# )'))
-        $infoRaw = ((Invoke-WebRequest "https://raw.githubusercontent.com/vmsilvamolina/PowerShell-Spells/master/spells.md").content | Out-String).Split("`n") | where {$_ -ne ""}
+        $infoRaw = ([System.string](Invoke-WebRequest "https://raw.githubusercontent.com/vmsilvamolina/PowerShell-Spells/master/spells.md").content).Split("`n") | Where-Object {$_ -ne ""}
         $textRaw = [System.String]::Join("`n",$infoRaw -notmatch '(^\s*$|^# )')
         $spells = New-Object System.Collections.ArrayList
         [regex]$regex = "## (.+?)\n(^`|.+)"
@@ -38,17 +38,10 @@ function Get-Spell {
     }
     
     process {
-        $regex.Matches($textRaw) |
-            ForEach-Object {
-                $spell = New-Object System.Object
-                $spell | Add-Member -MemberType NoteProperty -Name "Title" -Value $_.Groups[1].Value
-                $spell | Add-Member -MemberType NoteProperty -Name "Spell" -Value $_.Groups[2].Value
-                $spells.Add($spell) | Out-Null
-            }
         $randomNumber = Get-Random -Maximum $spells.Count
-        Write-host "Spell n°$randomNumber" -ForegroundColor Green
-        Write-host ">" $spells[$randomNumber].Title":"`n -ForegroundColor Green
-        Write-host $spells[$randomNumber].Spell `n -ForegroundColor Blue
+        Write-host "`n  Spell n°$randomNumber" -ForegroundColor Green
+        Write-host "  >" $spells[$randomNumber].Title":"`n -ForegroundColor Green
+        Write-host "  "$spells[$randomNumber].Spell `n -ForegroundColor Blue
     }
     
     end {

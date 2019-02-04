@@ -14,4 +14,8 @@
 
 ## Match with regex
 
-``"One line `nSecond line" -match '(^\s*)'``
+``"One line `rSecond line" -match '(^\r*)'``
+
+## Start a process maximized
+
+`Start-Process notepad.exe  -WindowStyle Maximized`
