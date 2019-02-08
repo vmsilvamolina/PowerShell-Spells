@@ -8,6 +8,7 @@ PowerShell Spells is a project that pretend collect on-liner tricks (spells) to 
   - [Usage](#usage)
     - [Installation](#installation)
     - [Get the Spells](#get-the-spells)
+  - [Contributing](#contributing)
 
 ## Usage
 
@@ -31,4 +32,6 @@ So then, you add the command to invoke a Spell:
 
 `Get-Spell`
 
+## Contributing
 
+Contributions are more than welcome! 🚀💻 Feel free to participate via pull requests or issues.
