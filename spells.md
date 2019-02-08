@@ -23,3 +23,7 @@
 ## Wait for process to finish
 
 `while ((Get-Process Code -errorAction SilentlyContinue)) {Start-Sleep 5}`
+
+## Print an array with commas separating each element
+
+`[String]::Join(',', $array)`
