@@ -33,7 +33,7 @@ Start-Process notepad.exe  -WindowStyle Maximized
 ## Wait for process to finish
 
 ```
-while ((Get-Process Code -errorAction SilentlyContinue)) {Start-Sleep 5}
+while ((Get-Process Code -ErrorAction SilentlyContinue)) {Start-Sleep 5}
 ```
 
 ## Print an array with commas separating each element
