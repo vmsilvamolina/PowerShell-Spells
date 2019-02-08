@@ -2,14 +2,26 @@
 
 PowerShell Spells is a project that pretend collect on-liner tricks (spells) to use with PowerShell. The main reason is expand the knowledge of the language and a fun information for check without left the console.
 
-## Installation
+## Table of Contents
 
-You can install the module with the following command:
+- [PowerShell-Spells](#powershell-spells)
+  - [Table of Contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Installation](#installation)
+  - [Get the Spells](#get-the-spells)
+
+
+
+## Usage
+
+### Installation
+
+You can install the module from the [PowerShell Gallery](https://www.powershellgallery.com/) with the following command:
 
 `Install-Module PowerShell-Spells`
 
 
-## How to use
+## Get the Spells
 
 First, you can add the module to your profile, adding the line:
 
