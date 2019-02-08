@@ -9,10 +9,10 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-# RootModule = ''
+RootModule = 'PowerShell-Spells.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1'
+ModuleVersion = '0.2.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -24,10 +24,10 @@ GUID = '8ddbd791-7272-4872-bcc6-bd18b45cdf58'
 Author = 'Victor Silva'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'https://github.com/vmsilvamolina/PowerShell-Spells'
 
 # Copyright statement for this module
-Copyright = '(c) Victor Silva. All rights reserved.'
+Copyright = '(c) 2019 Victor Silva. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'A list of PowerShell spells to become a real Magician without left the console.'
@@ -69,13 +69,13 @@ Description = 'A list of PowerShell spells to become a real Magician without lef
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @('Get-AllSpells', 'Get-Spell')
+FunctionsToExport = 'Get-AllSpells', 'Get-Spell'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
 
 # Variables to export from this module
-VariablesToExport = '*'
+# VariablesToExport = '*'
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
 AliasesToExport = @()
