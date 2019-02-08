@@ -19,3 +19,7 @@
 ## Start a process maximized
 
 `Start-Process notepad.exe  -WindowStyle Maximized`
+
+## Wait for process to finish
+
+`while ((Get-Process Code -errorAction SilentlyContinue)) {Start-Sleep 5}`
