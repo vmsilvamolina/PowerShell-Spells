@@ -4,4 +4,8 @@ PowerShell Spells is a project that pretend collect on-liner tricks (spells) to 
 
 ## Installation
 
-You can install the module...
+You can install the module with the following command:
+
+`Install-Module PowerShell-Spells`
+
+
