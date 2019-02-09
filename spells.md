@@ -2,28 +2,42 @@
 
 ## Change the console color
 
-`$host.UI.RawUI.BackgroundColor = "Black"; Clear-Host`
+```
+$host.UI.RawUI.BackgroundColor = "Black"; Clear-Host
+```
 
 ## Replace multiple spaces with a comma
 
-`$text = 'Hello          World'; $text -replace '\s\s+', ","`
+```
+$text = 'Hello          World'; $text -replace '\s\s+', ","
+```
 
 ## Rename a folder using the Move method
 
-`[System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')`
+```
+[System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')
+```
 
 ## Match with regex
 
-``"One line `rSecond line" -match '(^\r*)'``
+```
+"One line `rSecond line" -match '(^\r*)'
+````
 
 ## Start a process maximized
 
-`Start-Process notepad.exe  -WindowStyle Maximized`
+```
+Start-Process notepad.exe  -WindowStyle Maximized
+```
 
 ## Wait for process to finish
 
-`while ((Get-Process Code -errorAction SilentlyContinue)) {Start-Sleep 5}`
+```
+while ((Get-Process Code -errorAction SilentlyContinue)) {Start-Sleep 5}
+```
 
 ## Print an array with commas separating each element
 
-`[String]::Join(',', $array)`
+```
+[String]::Join(',', $array)
+```
