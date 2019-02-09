@@ -22,7 +22,7 @@ $text = 'Hello          World'; $text -replace '\s\s+', ","
 
 ```
 "One line `rSecond line" -match '(^\r*)'
-````
+```
 
 ## Start a process maximized
 
