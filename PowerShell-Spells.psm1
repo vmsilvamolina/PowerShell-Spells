@@ -8,7 +8,7 @@ function Get-AllSpells {
         $infoRaw = ([System.string](Invoke-WebRequest "https://raw.githubusercontent.com/vmsilvamolina/PowerShell-Spells/master/spells.md").content).Split("`n") | Where-Object {$_ -ne ""}
         $textRaw = [System.String]::Join("`n",$infoRaw -notmatch '(^\s*$|^# )')
         $spells = New-Object System.Collections.ArrayList
-        [regex]$regex = "## (.+?)\n(^`|.+)"
+        [regex]$regex = "## (.+?)\n``+\n(.+)\n`+"
     }
     
     process {
