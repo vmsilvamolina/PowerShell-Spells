@@ -41,3 +41,9 @@ while ((Get-Process Code -ErrorAction SilentlyContinue)) {Start-Sleep 5}
 ```
 [String]::Join(',', $array)
 ```
+
+## Recursive folder list
+
+```
+Get-ChildItem "C:\Foo" -recurse | Where-Object {$_.Attributes -eq 'Directory'}
+```
