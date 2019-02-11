@@ -32,6 +32,9 @@ So then, you add the command to invoke a Spell:
 
 `Get-Spell`
 
+
+![Get-Spell example](screenshot.png)
+
 ## Contributing
 
 Contributions are more than welcome! 🚀💻 Feel free to participate via pull requests or issues.
