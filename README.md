@@ -33,7 +33,7 @@ So then, you add the command to invoke a Spell:
 `Get-Spell`
 
 
-![Get-Spell example](screenshot.png)
+<img src="screenshot.png" width="500" />
 
 ## Contributing
 
