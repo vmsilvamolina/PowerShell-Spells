@@ -59,3 +59,9 @@ Get-Content -Path 'C:\crazy.log' -Tail 10 -Wait
 ```
 Get-Help -Name Get-Process -Parameter *
 ```
+
+## Use the PowerShell Registry Provider
+
+```
+Set-Location HKLM:
+```
