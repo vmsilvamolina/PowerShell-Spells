@@ -47,3 +47,9 @@ while ((Get-Process Code -ErrorAction SilentlyContinue)) {Start-Sleep 5}
 ```
 Get-ChildItem "C:\Foo" -recurse | Where-Object {$_.Attributes -eq 'Directory'}
 ```
+
+## Monitor a file in real time (Unix tail equivalent)
+
+```
+Get-Content -Path 'C:\crazy.log' -Tail 10 -Wait
+```
