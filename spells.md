@@ -65,3 +65,9 @@ Get-Help -Name Get-Process -Parameter *
 ```
 Set-Location HKLM:
 ```
+
+## Replace the first occurrence
+
+```
+[regex]$pattern = "Cloud"; $pattern.replace("Cloud is the best option", "Azure", 1)
+```
