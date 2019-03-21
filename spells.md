@@ -71,3 +71,9 @@ Set-Location HKLM:
 ```
 [regex]$pattern = "Cloud"; $pattern.replace("Cloud is the best option", "Azure", 1)
 ```
+
+## Recursively case-insensitive search for text in files
+
+```
+Get-ChildItem -Recurse -Filter *.cs | Select-String -Pattern "someText"
+```
