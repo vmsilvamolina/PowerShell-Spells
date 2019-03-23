@@ -77,3 +77,9 @@ Set-Location HKLM:
 ```
 Get-ChildItem -Recurse -Filter *.cs | Select-String -Pattern "someText"
 ```
+
+## Transfer data to or from the web (cURL)
+
+```
+Invoke-RestMethod https://github.com
+```
