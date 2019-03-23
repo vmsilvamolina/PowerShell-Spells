@@ -78,8 +78,8 @@ Set-Location HKLM:
 Get-ChildItem -Recurse -Filter *.cs | Select-String -Pattern "someText"
 ```
 
-## Transfer data to or from the web (cURL)
+## Transfer data to or from the web (like cURL)
 
 ```
-Invoke-RestMethod https://github.com
+Invoke-RestMethod https://www.powershellgallery.com/
 ```
