@@ -83,3 +83,9 @@ Get-ChildItem -Recurse -Filter *.cs | Select-String -Pattern "someText"
 ```
 Invoke-RestMethod https://www.powershellgallery.com/
 ```
+
+## Create a symbolic link
+
+```
+New-Item -Path C:\LinkDir -ItemType SymbolicLink -Value F:\RealDir
+```
