@@ -12,7 +12,7 @@
 RootModule = 'PowerShell-Spells.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.2.2'
+ModuleVersion = '0.2.3'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -27,7 +27,7 @@ Author = 'Victor Silva'
 CompanyName = 'https://github.com/vmsilvamolina/PowerShell-Spells'
 
 # Copyright statement for this module
-Copyright = '(c) 2019 Victor Silva. All rights reserved.'
+Copyright = '(c) 2020 Victor Silva. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'A list of PowerShell spells to become a real Magician without left the console.'

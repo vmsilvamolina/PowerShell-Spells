@@ -38,7 +38,7 @@ function Get-Spell {
     
     process {
         $randomNumber = Get-Random -Maximum $spells.Count
-        Write-host "`n  Spell n°$randomNumber" -ForegroundColor Green
+        Write-host "`n  Spell number: $randomNumber" -ForegroundColor Green
         Write-host "  >" $spells[$randomNumber].Title":"`n -ForegroundColor Green
         Write-host "  "$spells[$randomNumber].Spell `n -ForegroundColor Blue
     }

@@ -89,3 +89,9 @@ Invoke-RestMethod https://www.powershellgallery.com/
 ```
 New-Item -Path C:\LinkDir -ItemType SymbolicLink -Value F:\RealDir
 ```
+
+## Download a PowerShell module offline
+
+```
+Save-Module -Name Az -Path '\\server\share\AzModuleOffline' -Force
+```
