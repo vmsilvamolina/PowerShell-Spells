@@ -95,3 +95,9 @@ New-Item -Path C:\LinkDir -ItemType SymbolicLink -Value F:\RealDir
 ```
 Save-Module -Name Az -Path '\\server\share\AzModuleOffline' -Force
 ```
+
+## Two commands in the same line
+
+```
+$Service = 'w32time'; Get-Service -Name $Service
+```
