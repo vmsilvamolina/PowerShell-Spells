@@ -21,6 +21,9 @@ function Get-AllSpells {
     Rename a folder using the Move method                 [System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')
     ...                                                   ... 
 
+.LINK
+    https://github.com/vmsilvamolina/PowerShell-Spells
+
 #>
 
     [CmdletBinding()]
@@ -70,6 +73,9 @@ function Get-Spell {
     > Create a symbolic link :
 
     New-Item -Path C:\LinkDir -ItemType SymbolicLink -Value F:\RealDir
+
+.LINK
+    https://github.com/vmsilvamolina/PowerShell-Spells
 #>
 
     [CmdletBinding()]
