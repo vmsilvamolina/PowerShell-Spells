@@ -1,4 +1,28 @@
 function Get-AllSpells {
+
+<#
+.SYNOPSIS
+    Get-AllSpells returns a list of all available spells in the PowerShell Spells module.
+
+.DESCRIPTION
+    The Get-AllSpells command retrieves a comprehensive list of all spells in the PowerShell Spells module.
+    These spells are on-liner tricks that can be used with PowerShell to expand your knowledge 
+    of the language and provide fun information to explore without leaving the console.
+ 
+.EXAMPLE
+    Get-AllSpells
+
+    The command will display a result similar to the one below:
+
+    Title                                                 Spell
+    -----                                                 -----
+    Change the console color                              $host.UI.RawUI.BackgroundColor = "Black"; Clear-Host
+    Replace multiple spaces with a comma                  $text = 'Hello          World'; $text -replace '\s\s+', ","
+    Rename a folder using the Move method                 [System.IO.Directory]::Move('C:\Test\FolderName','C:\Test\FolderNewName')
+    ...                                                   ... 
+
+#>
+
     [CmdletBinding()]
     param (
         
@@ -27,6 +51,27 @@ function Get-AllSpells {
 }
 
 function Get-Spell {
+
+<#
+.SYNOPSIS
+    Get-Spell returns one of all available spells in the PowerShell Spells module, randomly.
+
+.DESCRIPTION
+    The Get-Spell command retrieves a random spell from the PowerShell Spells module.
+    These spells are on-liner tricks that can be used with PowerShell to expand your knowledge 
+    of the language and provide fun information to explore without leaving the console.
+ 
+.EXAMPLE
+    Get-Spell
+
+    To retrieve one of all available spells:
+
+    Spell number: 14
+    > Create a symbolic link :
+
+    New-Item -Path C:\LinkDir -ItemType SymbolicLink -Value F:\RealDir
+#>
+
     [CmdletBinding()]
     param (
 
